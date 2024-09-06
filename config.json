@@ -3,7 +3,7 @@
     "path": "/deeplink",
     "targets": {
       "android": {
-        "appName": "happyTrade",
+        "appName": "capitalhappytrade",
         "appPackage": "com.SK.HappyTrader",
         "appPath": "https://hitury777.github.io",
         "fallback": "https://play.google.com/store/apps/details?id=com.SK.HappyTrader"
