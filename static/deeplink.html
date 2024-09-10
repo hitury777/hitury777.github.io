@@ -56,11 +56,11 @@
 
           if (fallback) {
             intentURL += `S.browser_fallback_url=${encodeURIComponent(
-              "https://play.google.com/store/apps/details?id=com.SK.HappyTrader"
+              fallback
             )}`;
           }
 
-          intentURL += ";end";
+          intentURL += ";end;";
 
           manualAnchor.setAttribute("href", intentURL);
           manualAnchor.textContent = intentURL;
