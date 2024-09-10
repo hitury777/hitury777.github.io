@@ -6,9 +6,9 @@
         "appName": "capitalhappytrade",
         "appPackage": "com.SK.HappyTrader",
         "appPath": "https://hitury777.github.io",
-        "fallback": "https://play.google.com/store/apps/details?id=com.SK.HappyTrader"
+        "fallback": "https://hitury777.github.io"
       },
-      "default": "https://www.google.com.tw/?hl=zh_TW"
+      "default": "https://hitury777.github.io"
     }
   }
 ]
