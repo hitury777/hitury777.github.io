@@ -4,14 +4,36 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
-    <title>Document</title>
-
-    <script type="text/javascript">
+    <title>Redirecting</title>
+<!--     <script type="text/javascript">
         // 當頁面加載時，立即跳轉到 Google Play 商店
         window.location.href = "https://play.google.com/store/apps/details?id=com.SK.HappyTrader";
-    </script>
+    </script> -->
   </head>
   <body>
     <h1> homePage</h1>
+
+    function redirectBasedOnPlatform() {
+        const userAgent = window.navigator.userAgent || window.navigator.vendor || window.opera;
+
+        // 檢測是否是 iOS 平台 (iPhone, iPad, iPod)
+        if (/iPhone|iPad|iPod/i.test(userAgent)) {
+          // 跳轉到 Apple Store 的應用下載頁面
+          window.location.href = "https://apps.apple.com/us/app/your-app-id";
+        }
+        // 檢測是否是 Android 平台
+        else if (/Android/i.test(userAgent)) {
+          // 跳轉到 Google Play 的應用下載頁面
+          window.location.href = "https://play.google.com/store/apps/details?id=com.SK.HappyTrader";
+        }
+        // 其他平台或桌面
+        else {
+          // 跳轉到網站或其他應用的下載頁面
+          window.location.href = "https://play.google.com/store/apps/details?id=com.SK.HappyTrader";
+        }
+      }
+
+      // 當頁面加載時自動跳轉
+      window.onload = redirectBasedOnPlatform;
   </body>
 </html>
