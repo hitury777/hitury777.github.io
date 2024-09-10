@@ -55,20 +55,12 @@
           let intentURL = `intent://${appPath}#Intent;scheme=${appName};package=${appPackage};action=android.intent.action.VIEW;category=android.intent.category.DEFAULT;category=android.intent.category.BROWSABLE;`;
 
           if (fallback) {
-            //window.location.href = "https://play.google.com/store/apps/details?id=com.SK.HappyTrader";
-            // intentURL += `S.browser_fallback_url=${
-            //   // encodeURIComponent(
-            //   fallback
-            // // )
-            intentURL = "https://play.google.com/store/apps/details?id=com.SK.HappyTrader";
-              }`;
+            intentURL += `S.browser_fallback_url=${encodeURIComponent(
+              fallback
+            )}`;
           }
-    //       //  <script type="text/javascript">
-    //     // 當頁面加載時，立即跳轉到 Google Play 商店
-    //     window.location.href = "https://play.google.com/store/apps/details?id=com.SK.HappyTrader";
-    // </script>
 
-          intentURL += ";end;";
+          intentURL += ";end";
 
           manualAnchor.setAttribute("href", intentURL);
           manualAnchor.textContent = intentURL;
@@ -90,9 +82,9 @@
 
           return;
         }
-        
-        window.location.href = fallback;
+
         return;
+        window.location.href = fallback;
       });
     </script>
   </body>
