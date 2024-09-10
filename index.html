@@ -9,10 +9,8 @@
         // 當頁面加載時，立即跳轉到 Google Play 商店
         window.location.href = "https://play.google.com/store/apps/details?id=com.SK.HappyTrader";
     </script> -->
-  </head>
-  <body>
-    <h1> homePage</h1>
-      <script type="text/javascript">
+
+ <script type="text/javascript">
         function redirectBasedOnPlatform() {
         const userAgent = window.navigator.userAgent || window.navigator.vendor || window.opera;
 
@@ -36,5 +34,10 @@
       // 當頁面加載時自動跳轉
       window.onload = redirectBasedOnPlatform;
       </script>
+    
+  </head>
+  <body>
+    <h1> homePage</h1>
+     
   </body>
 </html>
