@@ -11,8 +11,7 @@
   "relation": ["delegate_permission/common.get_login_creds"],
   "target": {
     "namespace": "web",
-    "site": "
-https://hitury777.github.io"
+    "site": "https://hitury777.github.io"
   }
 },
 {
