@@ -5,39 +5,32 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
     <title>Redirecting1</title>
-<!--     <script type="text/javascript">
-        // 當頁面加載時，立即跳轉到 Google Play 商店
-        window.location.href = "https://play.google.com/store/apps/details?id=com.SK.HappyTrader";
-    </script> -->
+       <script type="text/javascript">
+         function redirectBasedOnPlatform() {
+          const userAgent = window.navigator.userAgent || window.navigator.vendor || window.opera;
 
- <script type="text/javascript">
-        function redirectBasedOnPlatform() {
-        const userAgent = window.navigator.userAgent || window.navigator.vendor || window.opera;
-
-        // 檢測是否是 iOS 平台 (iPhone, iPad, iPod)
-        if (/iPhone|iPad|iPod/i.test(userAgent)) {
+          // 檢測是否是 iOS 平台 (iPhone, iPad, iPod)
+          if (/iPhone|iPad|iPod/i.test(userAgent)) {
           // 跳轉到 Apple Store 的應用下載頁面
           window.location.href = "https://apps.apple.com/tw/app/%E7%BE%A4%E7%9B%8A%E8%A1%8C%E5%8B%95%E8%B4%8F%E5%AE%B6/id1469014227";
-        }
-        // 檢測是否是 Android 平台
-        else if (/Android/i.test(userAgent)) {
+          }
+          // 檢測是否是 Android 平台
+          else if (/Android/i.test(userAgent)) {
           // 跳轉到 Google Play 的應用下載頁面
           window.location.href = "https://play.google.com/store/apps/details?id=com.capital.capitalmobiwizard";
-        }
-        // 其他平台或桌面
-        else {
+          }
+          // 其他平台或桌面
+          else {
           // 跳轉到網站或其他應用的下載頁面
           window.location.href = "https://hitury777.github.io/capitalmobiwizard";
+          }
         }
-      }
 
-      // 當頁面加載時自動跳轉
-      window.onload = redirectBasedOnPlatform;
+        // 當頁面加載時自動跳轉
+        window.onload = redirectBasedOnPlatform;
       </script>
-    
   </head>
   <body>
     <h1> homePage</h1>
-     
   </body>
 </html>
