@@ -2,14 +2,8 @@
   "applinks": {
     "apps": [],
     "details": [
-      {
-        "appID": "CS4XN8JP39.tw.capital.iHappyTrade",
-        "paths": [
-          "/order*",
-          "/report*",
-          "/inventory*"
-        ]
-      }, {
+      
+{
         "appID": "CS4XN8JP39.tw.capital.pro",
         "paths": ["*"]
       }
