@@ -9,6 +9,9 @@
           "/report*",
           "/inventory*"
         ]
+      }, {
+        "appID": "CS4XN8JP39.tw.capital.pro",
+        "paths": ["*"]
       }
     ]
   }
