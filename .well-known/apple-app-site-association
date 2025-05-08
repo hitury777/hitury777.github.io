@@ -5,6 +5,18 @@
       {
         "appID": "CS4XN8JP39.com.capital.pro",
         "paths": ["*"]
+      },
+      {
+        "appID": "CS4XN8JP39.tw.capital.iHappyTrade",
+        "paths": ["*"]
+      },
+      {
+        "appID": "CS4XN8JP39.com.capital.iMobileWizard",
+        "paths": ["*"]
+      },
+      {
+        "appID": "CS4XN8JP39.tw.capital.goodi",
+        "paths": ["*"]
       }
     ]
   }
