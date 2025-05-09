@@ -14,12 +14,6 @@
           // 跳轉到 Apple Store 的應用下載頁面
           window.location.href = "https://apps.apple.com/tw/app/%E7%BE%A4%E7%9B%8A%E8%A1%8C%E5%8B%95%E8%B4%8F%E5%AE%B6/id1469014227";
           }
-          // 檢測是否是 Android 平台
-          else if (/Android/i.test(userAgent)) {
-          // 跳轉到 Google Play 的應用下載頁面
-          window.location.href = "https://play.google.com/store/apps/details?id=com.SK.HappyTrader";
-          // window.location.href = "capitalhappytrade://order/stock?idno=A227661082&unit=9182&acno=9821882&stock_no=6005&buy_sell=B&market_type=0&order_type=0&qty=2000&price=9.4&source=R1";
-          }
           // 其他平台或桌面
           else {
           // 跳轉到網站或其他應用的下載頁面
