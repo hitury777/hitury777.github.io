@@ -19,12 +19,12 @@
           // 檢測是否是 Android 平台
           else if (/Android/i.test(userAgent)) {
           // 跳轉到 Google Play 的應用下載頁面
-          window.location.href = "intent://www.capital.com.tw/capitalapp/capitalpro?appLinkSource=kuaiKuai#Intent;scheme=https;package=com.capital.pro;end";
-          // Fallback: 2 秒後跳轉網頁版
-          setTimeout(() => {
-          window.location.href = "https://play.google.com/store/apps/details?id=com.capital.pro;
-          }, 2000);
-          // window.location.href = "https://play.google.com/store/apps/details?id=com.capital.pro";
+          // window.location.href = "intent://www.capital.com.tw/capitalapp/capitalpro?appLinkSource=kuaiKuai#Intent;scheme=https;package=com.capital.pro;end";
+          // // Fallback: 2 秒後跳轉網頁版
+          // setTimeout(() => {
+          // window.location.href = "https://play.google.com/store/apps/details?id=com.capital.pro;
+          // }, 2000);
+          window.location.href = "https://play.google.com/store/apps/details?id=com.capital.pro";
           }
           // 其他平台或桌面
           else {
